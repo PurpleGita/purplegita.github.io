@@ -256,7 +256,7 @@ z-index: -1;
 
 .card {
   position: fixed;
-  left: 2rem;
+  left: 0rem;
   padding: 42px 30px;
   -webkit-clip-path: circle(5% at 95% 11%);
           clip-path: circle(5% at 95% 11%);
