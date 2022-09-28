@@ -8,7 +8,34 @@ body {
   justify-content: center;
   font-family: 'Cyber', sans-serif;
   background: linear-gradient(90deg, #000000 50%, #110518 80%), #242324;
+  animation: backmove 4s infinite;
   }
+
+  @keyframes backmove {
+    0% {background: linear-gradient(90deg, #000000 50%, #110518 80%), #242324;}
+    5% {background: linear-gradient(90deg, #000000 48%, #110518 79%), #242324;}
+    10% {background: linear-gradient(90deg, #000000 46%, #110518 78%), #242324;}
+    15% {background: linear-gradient(90deg, #000000 44%, #110518 77%), #242324;}
+    20% {background: linear-gradient(90deg, #000000 42%, #110518 76%), #242324;}
+    25% {background: linear-gradient(90deg, #000000 40%, #110518 75%), #242324;}
+    30% {background: linear-gradient(90deg, #000000 38%, #110518 74%), #242324;}
+    35% {background: linear-gradient(90deg, #000000 36%, #110518 73%), #242324;}
+    40% {background: linear-gradient(90deg, #000000 34%, #110518 72%), #242324;}
+    45% {background: linear-gradient(90deg, #000000 32%, #110518 71%), #242324;}
+    50% {background: linear-gradient(90deg, #000000 30%, #110518 70%), #242324;}
+    55% {background: linear-gradient(90deg, #000000 32%, #110518 71%), #242324;}
+    60% {background: linear-gradient(90deg, #000000 34%, #110518 72%), #242324;}
+    65% {background: linear-gradient(90deg, #000000 36%, #110518 73%), #242324;}
+    70% {background: linear-gradient(90deg, #000000 38%, #110518 74%), #242324;}
+    75% {background: linear-gradient(90deg, #000000 40%, #110518 75%), #242324;}
+    80% {background: linear-gradient(90deg, #000000 42%, #110518 76%), #242324;}
+    85% {background: linear-gradient(90deg, #000000 44%, #110518 77%), #242324;}
+    90% {background: linear-gradient(90deg, #000000 46%, #110518 78%), #242324;}
+    95% {background: linear-gradient(90deg, #000000 48%, #110518 79%), #242324;}
+    100% {background: linear-gradient(90deg, #000000 50%, #110518 80%), #242324;}
+  }
+  
+
 
 /*#endregion Background*/
 
