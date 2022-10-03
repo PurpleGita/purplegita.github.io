@@ -87,8 +87,8 @@ margin-top: 2rem;
 --clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
 --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
 --clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
---clip-four: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
---clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+--clip-four: polygon(0 -5%, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+--clip-five: polygon(0 -4%, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
 --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
 --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
 font-family: 'Cyber', sans-serif;
@@ -157,7 +157,7 @@ bottom: calc(var(--border) * -1);
 background: var(--shadow-primary);
 text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
 clip-path: var(--clip);
-animation: glitch 2s infinite;
+animation: glitch 3s infinite;
 display: none;
 }
 
@@ -176,6 +176,7 @@ clip-path: var(--clip);
 background: var(--primary);
 z-index: -1;
 }
+
 
 @keyframes glitch {
 0% {
@@ -248,29 +249,75 @@ z-index: -1;
 /*#endregion Clitch_Buttons */
 
 
+
 /*#region Info_Button */
 
-/** {
-  box-sizing: border-box;
-}*/
-
 .card {
-  position: fixed;
+  position: absolute;
   left: 0rem;
+  bottom: 0.5rem;
   padding: 42px 30px;
-  -webkit-clip-path: circle(5% at 95% 11%);
-          clip-path: circle(5% at 95% 11%);
+  -webkit-clip-path: circle(4% at 7% 85%);
+          clip-path: circle(4% at 7% 85%);
   transition: all ease-in-out 0.3s;
   background-color: #ffffff;
+  animation: Bounce 2s infinite;
+--primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
+--shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
+--primary-hue: 40;
+--primary-lightness: 60;
+--color: hsl(0, 0%, 0%);
+--shadow-primary-hue: 260;
+--shadow-secondary-hue: 60;
+--shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
+--clip: polygon(0 5%, 500% 0, 500% 100%, 555% 500%, 925% 905%, 85% 90%, 85% 100%, 800% 102%, 0 10%);
+--shimmy-distance: 5;
+--clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 80%, 85% 95%, 8% 95%, 0 70%);
+--clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
+--clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
+--clip-four: polygon(0% 95%, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+--clip-five: polygon(0 80%, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+--clip-six: polygon(0 20%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
+--clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
+font-family: 'Cyber', sans-serif;
+color: var(--color);
+text-transform: uppercase;
+font-size: var(--font-size);
+outline: transparent;
+border: 0;
+transition: background 0.2s;
 }
-.card__infoicon {
+
+.card__glitch {
   position: absolute;
-  top: 10px;
-  right: 30px;
-  font-size: 1.4em;
-  color: #000000;
-  transition: ease-out 0.3s;
-}
+  top: calc(var(--border) * -1);
+  left: calc(var(--border) * -1);
+  right: calc(var(--border) * -1);
+  bottom: calc(var(--border) * -1);
+  background: var(--shadow-primary);
+  text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
+  clip-path: var(--clip);
+  animation: glitch 2s infinite;
+  display: none;
+  }
+
+  .card:hover .card__glitch {
+    display: block;
+    }
+    
+    .card__glitch:before {
+    content: '';
+    position: absolute;
+    top: calc(var(--border) * 1);
+    right: calc(var(--border) * 1);
+    bottom: calc(var(--border) * 1);
+    left: calc(var(--border) * 1);
+    clip-path: var(--clip);
+    background: var(--primary);
+    z-index: -1;
+    }
+
+
 .card__title {
   margin: 0;
   font-size: 3em;
@@ -285,12 +332,12 @@ z-index: -1;
 .card__reference {
   display: inline-block;
   border-bottom: 1px solid transparent;
-  color: #0099ff;
+  color: #721285;
   text-decoration: none;
   transition: ease-in 0.3s;
 }
 .card__reference:hover {
-  border-bottom-color: #0099ff;
+  border-bottom-color: #721285;
 }
 .card:hover, .card:focus {
   -webkit-clip-path: circle(75%);
@@ -299,12 +346,75 @@ z-index: -1;
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
   background: #ffffff;
   outline: none;
+  animation: Bounce step-start;
 }
-.card:hover .card__infoicon, .card:focus .card__infoicon {
-  opacity: 0;
-}
+
 .card:focus {
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes Bounce {
+  0% {
+    bottom: 1rem;
+  }
+  5% {
+    bottom: 0.90rem;
+  }
+  10% {
+    bottom: 0.80rem;
+  }
+  15% {
+    bottom: 0.70rem;
+  }
+  20% {
+    bottom: 0.60rem;
+  }
+  25% {
+    bottom: 0.50rem;
+  }
+  30% {
+    bottom: 0.40rem;
+  }
+  35% {
+    bottom: 0.30rem;
+  }
+  40% {
+    bottom: 0.20rem;
+  }
+  45% {
+    bottom: 0.10rem;
+  }
+  50% {
+    bottom: -0rem;
+  }
+  55% {
+    bottom: 0.20em;
+  }
+  60% {
+    bottom: 0.30rem;
+  }
+  75% {
+    bottom: 0.40rem;
+  }
+  70% {
+    bottom: 0.50rem;
+  }
+  75% {
+    bottom: 0.60rem;
+  }
+  80% {
+    bottom: 0.7rem;
+  }
+  85% {
+    bottom: 0.8rem;
+  }
+  90% {
+    bottom: 0.9rem;
+  }
+  100% {
+    bottom: 1rem;
+  }
+
 }
 
 /*#endregion Info_Button */
