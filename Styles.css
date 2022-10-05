@@ -8,38 +8,46 @@
   justify-content: center;
   font-family: 'Cyber', sans-serif;
   background: linear-gradient(90deg, #000000 50%, #110518 80%), #242324;
+  --primary-hue: #000000;
+  --second-hue: #110518;
+  --third-hue: #242324;
   animation: backmove 4s infinite;
   }
 
   @keyframes backmove {
-    0% {background: linear-gradient(90deg, #000000 50%, #110518 80%), #242324;}
-    5% {background: linear-gradient(90deg, #000000 48%, #110518 79%), #242324;}
-    10% {background: linear-gradient(90deg, #000000 46%, #110518 78%), #242324;}
-    15% {background: linear-gradient(90deg, #000000 44%, #110518 77%), #242324;}
-    20% {background: linear-gradient(90deg, #000000 42%, #110518 76%), #242324;}
-    25% {background: linear-gradient(90deg, #000000 40%, #110518 75%), #242324;}
-    30% {background: linear-gradient(90deg, #000000 38%, #110518 74%), #242324;}
-    35% {background: linear-gradient(90deg, #000000 36%, #110518 73%), #242324;}
-    40% {background: linear-gradient(90deg, #000000 34%, #110518 72%), #242324;}
-    45% {background: linear-gradient(90deg, #000000 32%, #110518 71%), #242324;}
-    50% {background: linear-gradient(90deg, #000000 30%, #110518 70%), #242324;}
-    55% {background: linear-gradient(90deg, #000000 32%, #110518 71%), #242324;}
-    60% {background: linear-gradient(90deg, #000000 34%, #110518 72%), #242324;}
-    65% {background: linear-gradient(90deg, #000000 36%, #110518 73%), #242324;}
-    70% {background: linear-gradient(90deg, #000000 38%, #110518 74%), #242324;}
-    75% {background: linear-gradient(90deg, #000000 40%, #110518 75%), #242324;}
-    80% {background: linear-gradient(90deg, #000000 42%, #110518 76%), #242324;}
-    85% {background: linear-gradient(90deg, #000000 44%, #110518 77%), #242324;}
-    90% {background: linear-gradient(90deg, #000000 46%, #110518 78%), #242324;}
-    95% {background: linear-gradient(90deg, #000000 48%, #110518 79%), #242324;}
-    100% {background: linear-gradient(90deg, #000000 50%, #110518 80%), #242324;}
+    0% {background: linear-gradient(90deg, --primary-hue 50%,  --second-hue 80%),   --third-hue;}
+    5% {background: linear-gradient(90deg, --primary-hue 48%,  --second-hue 79%),   --third-hue;}
+    10% {background: linear-gradient(90deg, --primary-hue0 46%,  --second-hue 78%),   --third-hue;}
+    15% {background: linear-gradient(90deg, --primary-hue 44%,  --second-hue 77%),   --third-hue;}
+    20% {background: linear-gradient(90deg, --primary-hue 42%, --second-hue 76%),   --third-hue;}
+    25% {background: linear-gradient(90deg, --primary-hue 40%, --second-hue 75%),   --third-hue;}
+    30% {background: linear-gradient(90deg, --primary-hue 38%, --second-hue 74%),   --third-hue;}
+    35% {background: linear-gradient(90deg, --primary-hue 36%, --second-hue 73%),   --third-hue;}
+    40% {background: linear-gradient(90deg, --primary-hue 34%, --second-hue 72%),   --third-hue;}
+    45% {background: linear-gradient(90deg, --primary-hue 32%, --second-hue 71%),   --third-hue;}
+    50% {background: linear-gradient(90deg, --primary-hue 30%, --second-hue 70%),   --third-hue;}
+    55% {background: linear-gradient(90deg, --primary-hue 32%, --second-hue 71%),   --third-hue;}
+    60% {background: linear-gradient(90deg, --primary-hue 34%, --second-hue 72%),   --third-hue;}
+    65% {background: linear-gradient(90deg, --primary-hue 36%, --second-hue 73%),   --third-hue;}
+    70% {background: linear-gradient(90deg, --primary-hue 38%, --second-hue 74%),   --third-hue;}
+    75% {background: linear-gradient(90deg, --primary-hue 40%, --second-hue 75%),   --third-hue;}
+    80% {background: linear-gradient(90deg, --primary-hue 42%, --second-hue 76%),   --third-hue;}
+    85% {background: linear-gradient(90deg, --primary-hue 44%, --second-hue 77%),   --third-hue;}
+    90% {background: linear-gradient(90deg, --primary-hue 46%, --second-hue 78%),   --third-hue;}
+    95% {background: linear-gradient(90deg, --primary-hue 48%, --second-hue 79%),   --third-hue;}
+    100% {background: linear-gradient(90deg, --primary-hue 50%, --second-hue 80%),   --third-hue;}
   }
   
 .backAbout {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
-
+  background: linear-gradient(90deg, #ffffff 50%, #e28585 80%), #b82e2e;
+  --primary-hue: #ffffff;
+  --second-hue: #e28585;
+  --third-hue: #b82e2e;
+  animation: backmove 4s infinite;
 }
 
 /*#endregion Background*/
@@ -439,13 +447,16 @@ transition: background 0.2s;
   --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
   --border: 9px;
   --shimmy-distance: 4;
-  --clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
-  --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
-  --clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
-  --clip-four: polygon(0 -5%, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+  --clip-one: polygon(0 8%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 10% 95%, 0 70%);
+  /*
+  --clip-one: polygon(0 8%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 10% 95%, 0 70%);
+  --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 0% 100%, 0 78%);
+  --clip-three: polygon(0 44%, 100% 44%, 100% 100%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
+  --clip-four: polygon(0 -5%, 100% 0, 100% 0, 95% 0, 95% 0, 95% 0, 85% 0, 8% 0, 0 0);
   --clip-five: polygon(0 -4%, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
   --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
   --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
+  */
   font-family: 'Cyber', sans-serif;
   color: var(--color);
   background: transparent;
@@ -479,6 +490,13 @@ transition: background 0.2s;
 
 /*#endregion glitch_rotated */
 
+
+/*#region Goose */
 .Goose{
-  
+  margin-left: 10rem;
+  margin-top: 5rem;
 }
+
+/*#endregion Goose */
+
+
