@@ -45,8 +45,8 @@
   justify-content: center;
   background: linear-gradient(90deg, #ffffff 50%, #e28585 80%), #b82e2e;
   --primary-hue: #ffffff;
-  --second-hue: #e28585;
-  --third-hue: #b82e2e;
+  --second-hue: #ca5454;
+  --third-hue: #850c0c;
   animation: backmove 4s infinite;
 }
 
@@ -438,31 +438,23 @@ transition: background 0.2s;
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
   --primary-hue: 490;
   --primary-lightness: 60;
-  --color: hsl(0, 71%, 40%);
+  --color: #850c0c;
   --font-size: 26px;
   --shadow-primary-hue: 260;
   --label-size: 100px;
-  --shadow-secondary-hue: 60;
+  --shadow-secondary-hue: 0;
   --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
   --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
   --border: 9px;
   --shimmy-distance: 4;
-  --clip-one: polygon(0 8%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 10% 95%, 0 70%);
-  --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 0% 100%, 0 78%);
-  --clip-three: polygon(0 44%, 100% 44%, 100% 100%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 0% 54%, 0 54%);
-  --clip-four: polygon(0 -5%, 100% 0, 100% 0, 95% 0, 95% 0, 95% 0, 85% 0, 8% 0, 0 0);
-  --clip-five: polygon(0 -4%, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
-  --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 0% 85%, 0 70%);
-  --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 0% 80%, 0 70%);
-  /*
-  --clip-one: polygon(0 8%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 10% 95%, 0 70%);
-  --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 0% 100%, 0 78%);
-  --clip-three: polygon(0 44%, 100% 44%, 100% 100%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
-  --clip-four: polygon(0 -5%, 100% 0, 100% 0, 95% 0, 95% 0, 95% 0, 85% 0, 8% 0, 0 0);
-  --clip-five: polygon(0 -4%, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
-  --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
-  --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
-  */
+  --clip-one: polygon(0 8%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 10% 95%, 0 10%);
+  --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 0% 100%, 0 10%);
+  --clip-three: polygon(0 44%, 100% 44%, 100% 100%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 0% 54%, 0 10%);
+  --clip-four: polygon(0 -5%, 100% 0, 100% 0, 95% 0, 95% 0, 95% 0, 85% 0, 8% 0, 0% 0);
+  --clip-five: polygon(0 -4%, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0% 0);
+  --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 0% 80%, 0 10%);
+  --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 0% 80%, 0 10%);
+
   font-family: 'Cyber', sans-serif;
   color: var(--color);
   background: transparent;
@@ -499,8 +491,8 @@ transition: background 0.2s;
 
 /*#region Goose */
 .Goose{
-  margin-left: 10rem;
-  margin-top: 5rem;
+  margin-left: -40rem;
+  margin-top: 7rem;
 }
 
 /*#endregion Goose */
