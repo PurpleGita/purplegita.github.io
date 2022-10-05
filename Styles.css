@@ -35,7 +35,12 @@
     100% {background: linear-gradient(90deg, #000000 50%, #110518 80%), #242324;}
   }
   
+.backAbout {
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
 
+}
 
 /*#endregion Background*/
 
@@ -474,3 +479,6 @@ transition: background 0.2s;
 
 /*#endregion glitch_rotated */
 
+.Goose{
+  
+}
