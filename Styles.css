@@ -11,7 +11,7 @@
   --primary-hue: #000000;
   --second-hue: #110518;
   --third-hue: #242324;
-  animation: backmove 4s infinite;
+  animation: backmove 6s infinite;
   }
 
   @keyframes backmove {
@@ -43,14 +43,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, #ffffff 50%, #e28585 80%), #b82e2e;
+  background: linear-gradient(90deg, #ffffff 50%, #ffdbdb 80%), #ffaaaa;
   --primary-hue: #ffffff;
-  --second-hue: #ca5454;
-  --third-hue: #850c0c;
-  animation: backmove 4s infinite;
+  --second-hue: #ffdbdb;
+  --third-hue: #ffaaaa;
+  animation: backmove 6s infinite;
 }
 
 /*#endregion Background*/
+
 
 
 /*#region Logos*/
@@ -438,11 +439,11 @@ transition: background 0.2s;
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
   --primary-hue: 490;
   --primary-lightness: 60;
-  --color: #850c0c;
+  --color: #ffaaaa;
   --font-size: 26px;
   --shadow-primary-hue: 260;
   --label-size: 100px;
-  --shadow-secondary-hue: 0;
+  --shadow-secondary-hue: #ffaaaa;
   --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
   --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
   --border: 9px;
@@ -489,6 +490,7 @@ transition: background 0.2s;
 /*#endregion glitch_rotated */
 
 
+
 /*#region Goose */
 .Goose{
   margin-left: -40rem;
@@ -496,5 +498,15 @@ transition: background 0.2s;
 }
 
 /*#endregion Goose */
+
+
+/*#region AboutText */
+.AboutText{
+  position: fixed;
+  margin-left: 0rem;
+  margin-top: -17rem;
+}
+
+/*#endregion AboutText */
 
 
