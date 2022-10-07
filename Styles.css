@@ -437,11 +437,11 @@ transition: background 0.2s;
   margin-top: 0rem;
   --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
-  --primary-hue: 490;
+  --primary-hue: 460;
   --primary-lightness: 60;
   --color: #ffaaaa;
   --font-size: 26px;
-  --shadow-primary-hue: 260;
+  --shadow-primary-hue: 00;
   --label-size: 100px;
   --shadow-secondary-hue: #ffaaaa;
   --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
@@ -480,7 +480,7 @@ transition: background 0.2s;
   left: calc(var(--border) * -1);
   right: calc(var(--border) * -1);
   bottom: calc(var(--border) * -1);
-  background: var(--shadow-primary);
+  background: red;
   text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
   clip-path: var(--clip);
   animation: glitch 5s infinite; 
@@ -502,9 +502,13 @@ transition: background 0.2s;
 
 /*#region AboutText */
 .AboutText{
+  text-align: left;
   position: fixed;
   margin-left: 0rem;
-  margin-top: -17rem;
+  margin-top: 8rem;
+  width: 39rem;
+  
+  
 }
 
 /*#endregion AboutText */
