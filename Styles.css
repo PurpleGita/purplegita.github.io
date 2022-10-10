@@ -493,11 +493,12 @@ transition: background 0.2s;
 
 /*#region Goose */
 .Goose{
-  margin-left: -40rem;
-  margin-top: 7rem;
+  margin-left: -43rem;
+  margin-top: 8rem;
 }
 
 /*#endregion Goose */
+
 
 
 /*#region AboutText */
@@ -512,5 +513,26 @@ transition: background 0.2s;
 }
 
 /*#endregion AboutText */
+
+
+
+/*#region Sidebox */
+
+ul 
+{
+  position: fixed;
+  border: 0.5rem solid red;
+  padding: 3rem;
+  font-size: 2rem;
+}
+
+.SideBox
+{
+  position: fixed;
+  margin-top: -20rem;
+  margin-left: 50rem;
+}
+
+/*#endregion Sidebox */
 
 
