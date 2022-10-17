@@ -50,10 +50,15 @@
   animation: backmove 6s infinite;
 }
 
-.backAbout
+.backSkill
 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   align-self: center;
-  
+  background: #2f0141;
+
+
 }
 
 /*#endregion Background*/
