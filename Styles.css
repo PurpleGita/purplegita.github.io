@@ -50,6 +50,12 @@
   animation: backmove 6s infinite;
 }
 
+.backAbout
+{
+  align-self: center;
+  
+}
+
 /*#endregion Background*/
 
 
@@ -534,5 +540,7 @@ ul
 }
 
 /*#endregion Sidebox */
+
+
 
 
