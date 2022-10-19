@@ -551,7 +551,46 @@ ul
 /*#endregion Sidebox */
 
 
-/*#region Whale */
+/*#region Whale And Water */
+
+
+
+
+.Box{
+  margin-top: 26.6rem;
+  border-top: 5px solid #333;
+  z-index:-2;
+  position: fixed;
+}
+
+
+.Water{
+position: fixed;
+margin-top: 26.6rem;
+border-top: 5px solid #333;
+opacity: 0.3;
+}
+
+.WaterSlide{
+  position: relative;
+  overflow: hidden;
+
+}
+
+.images
+{
+  align-items: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 300%;
+  animation: slideshow 20s linear infinite;
+}
+
+@keyframes slideshow {
+  0% {left: 0%}
+  100% {left: -100%;}
+}
 
 .scene {
   width: 500px;
@@ -836,7 +875,7 @@ ul
   height: 13px;
   width: 13px;
   border-radius: 50%;
-  background-color: purple;
+  background-color: rgb(204, 43, 204);
   position: absolute;
   bottom: -25px;
   right: 180px;
@@ -848,7 +887,7 @@ ul
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: purple;
+  background-color: rgb(204, 43, 204);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -860,7 +899,7 @@ ul
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: purple;
+  background-color: rgb(204, 43, 204);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -984,7 +1023,7 @@ ul
   border-right: 8px solid #333;
 }
 
-/*#endregion Whale */
+/*#endregion Whale And Water*/
 
 
 
