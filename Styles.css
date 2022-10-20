@@ -1081,40 +1081,75 @@ padding-bottom: 20%;
 }
 
 .PastelBlueBox{
-
   position: fixed;
   border: 7px solid rgb(0, 0, 0);
   z-index: -3;
+}
 
+.BoxBigText1{
+  position: fixed;
+  width: 30%;
+  top: 24%;
+  left: 61%;
+  font-size: 200%;
+}
+
+.BoxText1{
+  position: fixed;
+  width: 30%;
+  top: 30%;
+  left: 61%;
+}
+
+.BoxBigText2{
+  position: fixed;
+  width: 23%;
+  top: 61%;
+  left: 41%;
+  font-size: 200%;
+}
+
+.BoxText2{
+  position: fixed;
+  width: 23%;
+  top: 67%;
+  left: 41%;
+}
+
+.BoxBigText3{
+  position: fixed;
+  width: 20%;
+  top: 34%;
+  left: 2%;
+  font-size: 200%;
+}
+
+.BoxText3{
+  position: fixed;
+  width: 20%;
+  top: 40%;
+  left: 2%;
 }
 
 .ImageRotation{
   position: fixed;
-  animation: Rotation 5s linear infinite;
+  animation: Rotation 7s linear infinite;
+  z-index: -1;
+  transform: rotate(20deg);
 }
 
 @keyframes Rotation {
   0% {left: 28%; top: -10%;}
-
   10% {left: 30%; top: 5%;}
-
   20% {left: 31%; top: 20%;}
-
   30% {left: 32%; top: 35%;}
-
-  40% {left: 33%; top: 50%;}
-
-  50% {left: 34%; top: 65%;}
-
-  60% {left: 32%; top: 80%;}
-
-  70% {left: 30%; top: 95%;}
-
-  80% {left: 29%; top: 115%;}
-
-  90% {left: 29%; top: 130%;}
-
-  100% {left: 29%; top: 135%;}
+  40% {left: 34%; top: 50%;}
+  50% {left: 33.5%; top: 65%;}
+  60% {left: 30.5%; top: 80%;}
+  70% {left: 28.5%; top: 95%;}
+  80% {left: 25.5%; top: 110%;}
+  90% {left: 23.5%; top: 125%;}
+  100% {left: 21.5%; top: 140%;}
 }
 
 /*#endregion PastelBoxes */
