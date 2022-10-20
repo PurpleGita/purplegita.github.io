@@ -568,7 +568,7 @@ ul
 position: fixed;
 margin-top: 26.6rem;
 border-top: 5px solid #333;
-opacity: 0.3;
+opacity: 0.2;
 z-index: -1;
 }
 
@@ -1026,6 +1026,54 @@ z-index: -1;
 
 /*#endregion Whale And Water*/
 
+
+/*#region TextSkills */
+
+
+@font-face {
+  font-family: 'Lobster Two', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,700&display=swap');
+  font-display: swap;
+}
+
+.TextHeadline{
+  position: fixed;
+  font-size: 800%;
+  color: #ffffff;
+  top: 23%;
+  left: 3%;
+  font-family: 'Lobster Two', cursive;
+}
+
+.FrontHead{
+padding-bottom: 20%;
+}
+
+.BackHead{
+
+}
+
+.TextNormal{
+  position: fixed;
+  font-size: 200%;
+  color: #ffffff;
+  font-family: 'Lobster Two', cursive;
+  width: 30%;
+  left: 67%;
+  top: 20%;
+}
+
+.FrontNormal{
+  padding-bottom: 15%;
+
+}
+
+.BackNormal{
+
+}
+
+/*#endregion TextSkills */
 
 
 
