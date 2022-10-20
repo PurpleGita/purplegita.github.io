@@ -50,12 +50,16 @@
   animation: backmove 6s infinite;
 }
 
-.backSkill
+.backQual
 {
 
   background:#36052a;
 
-  }
+}
+
+.SkillsBody{
+  background-color: #ffffff;
+}
 
 /*#endregion Background*/
 
@@ -1050,10 +1054,6 @@ z-index: -1;
 padding-bottom: 20%;
 }
 
-.BackHead{
-
-}
-
 .TextNormal{
   position: fixed;
   font-size: 200%;
@@ -1069,11 +1069,24 @@ padding-bottom: 20%;
 
 }
 
-.BackNormal{
-
-}
 
 /*#endregion TextSkills */
+
+/*#region PastelBoxes */
+
+.BlueBoxes{
+    height: 100%;
+}
+
+.PastelBlueBox{
+  position: fixed;
+  border: 7px solid rgb(0, 0, 0);
+  z-index: -3;
+}
+
+
+
+/*#endregion PastelBoxes */
 
 
 
