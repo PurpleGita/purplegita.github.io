@@ -1075,16 +1075,47 @@ padding-bottom: 20%;
 /*#region PastelBoxes */
 
 .BlueBoxes{
+
     height: 100%;
+
 }
 
 .PastelBlueBox{
+
   position: fixed;
   border: 7px solid rgb(0, 0, 0);
   z-index: -3;
+
 }
 
+.ImageRotation{
+  position: fixed;
+  animation: Rotation 5s linear infinite;
+}
 
+@keyframes Rotation {
+  0% {left: 28%; top: -10%;}
+
+  10% {left: 30%; top: 5%;}
+
+  20% {left: 31%; top: 20%;}
+
+  30% {left: 32%; top: 35%;}
+
+  40% {left: 33%; top: 50%;}
+
+  50% {left: 34%; top: 65%;}
+
+  60% {left: 32%; top: 80%;}
+
+  70% {left: 30%; top: 95%;}
+
+  80% {left: 29%; top: 115%;}
+
+  90% {left: 29%; top: 130%;}
+
+  100% {left: 29%; top: 135%;}
+}
 
 /*#endregion PastelBoxes */
 
