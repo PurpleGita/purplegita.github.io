@@ -1134,6 +1134,7 @@ padding-bottom: 20%;
 .ImageRotation{
   position: fixed;
   animation: Rotation 7s linear infinite;
+  animation-delay: -3s;
   z-index: -1;
   transform: rotate(20deg);
 }
