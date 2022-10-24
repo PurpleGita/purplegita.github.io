@@ -522,6 +522,7 @@ transition: background 0.2s;
 
 /*#region AboutText */
 .AboutText{
+  font-size: 120%;
   text-align: left;
   position: fixed;
   margin-left: 0rem;
@@ -540,7 +541,6 @@ transition: background 0.2s;
 ul 
 {
   position: fixed;
-  border: 0.5rem solid red;
   padding: 3rem;
   font-size: 2rem;
 }
@@ -1071,6 +1071,7 @@ padding-bottom: 20%;
 
 
 /*#endregion TextSkills */
+
 
 /*#region PastelBoxes */
 
