@@ -548,7 +548,7 @@ ul
 .SideBox
 {
   position: fixed;
-  margin-top: -20rem;
+  margin-top: -15rem;
   margin-left: 50rem;
 }
 
@@ -1051,7 +1051,7 @@ z-index: -1;
 }
 
 .FrontHead{
-padding-bottom: 20%;
+padding-bottom: 18%;
 }
 
 .TextNormal{
@@ -1061,11 +1061,11 @@ padding-bottom: 20%;
   font-family: 'Lobster Two', cursive;
   width: 30%;
   left: 67%;
-  top: 20%;
+  top: 25%;
 }
 
 .FrontNormal{
-  padding-bottom: 15%;
+  padding-bottom: 20%;
 
 }
 
