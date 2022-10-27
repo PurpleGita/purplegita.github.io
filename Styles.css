@@ -186,6 +186,19 @@ line-height: 75px;
 transition: background 0.2s;
 }
 
+@media screen and (max-width: 422px) {
+  .cybr-btn {
+  --color: hsl(0, 0%, 0%);
+  }
+
+
+}
+
+
+
+
+
+
 .cybr-btn-small{
 position: absolute;
 top: calc(var(--border) * -1);
