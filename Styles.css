@@ -63,7 +63,16 @@
 
 /*#endregion Background*/
 
+/*#region GetInTouchButton */
 
+.GetInTouchButton{
+  position: fixed;
+  left: 92%;
+  width: 6%;
+  height: 4%;
+}
+
+/*#endregion GetInTouchButton */
 
 /*#region Logos*/
 .LogoHome{
