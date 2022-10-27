@@ -63,16 +63,60 @@
 
 /*#endregion Background*/
 
+
 /*#region GetInTouchButton */
 
 .GetInTouchButton{
-  position: fixed;
-  left: 92%;
-  width: 6%;
-  height: 4%;
+  position: absolute;
+  right: 0%;
+  width: 14%;
+  height: 20%;
+  bottom: 2%;
+  font-family: 'Cyber', sans-serif;
+  clip-path: polygon(90% 80%, 90% 100%, 50% 100%, 50% 80%);
+  border-radius: 20px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  text-align: center;
 }
 
+.GetInTouchText{
+position: fixed;
+display: flex;
+top: 94%;
+right: 1.8%;
+}
+
+.GetInTouchDescription{
+  display: none;
+}
+
+.GetInTouchButton:hover .GetInTouchText{
+  display: none;
+}
+.GetInTouchButton:hover .GetInTouchDescription{
+display: flex;
+}
+
+.GetInTouchButton:hover{
+  position: absolute;
+  right: 2%;
+  width: 13%;
+  height: 15%;
+  bottom: 2%;
+  font-family: 'Cyber', sans-serif;
+  clip-path: circle(100%);
+  border-radius: 20px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  outline: none;
+
+}
+
+
+
 /*#endregion GetInTouchButton */
+
 
 /*#region Logos*/
 .LogoHome{
@@ -83,7 +127,6 @@
 
 }
 /*#endregion Logos*/
-
 
 
 /*#region Clitch_Buttons */
@@ -296,7 +339,7 @@ z-index: -1;
   padding: 42px 30px;
   -webkit-clip-path: circle(4% at 7% 85%);
           clip-path: circle(4% at 7% 85%);
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.5s;
   background-color: #ffffff;
   animation: Bounce 2s infinite;
 --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
