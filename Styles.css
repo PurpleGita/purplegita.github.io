@@ -64,6 +64,7 @@
 /*#endregion Background*/
 
 
+
 /*#region GetInTouchButton */
 
 .GetInTouchButton{
@@ -113,20 +114,67 @@ display: flex;
 
 }
 
+@media only screen and (max-width: 450px) {
+  .GetInTouchButton{
+    position: absolute;
+    right: 0%;
+    width: 50%;
+    height: 20%;
+    bottom: 2%;
+    font-family: 'Cyber', sans-serif;
+    clip-path: polygon(100% 80%, 100% 100%, 50% 100%, 50% 80%);
+    border-radius: 20px;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+    text-align: center;
+  }
 
+
+.GetInTouchButton:hover{
+  position: absolute;
+  right: 0%;
+  width: 62%;
+  height: 12%;
+  bottom: 2%;
+  font-family: 'Cyber', sans-serif;
+  clip-path: circle(100%);
+  border-radius: 20px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+}
+
+}
 
 /*#endregion GetInTouchButton */
+
 
 
 /*#region Logos*/
 .LogoHome{
     margin: 0;
-    margin-bottom: 2rem;
-    padding-top: 3rem;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
     text-align: center;
 
+
 }
+
+.LogoHomepng{
+  width: 70%;
+}
+
+
+@media only screen and (min-width: 450px) {
+  .LogoHome{
+  }
+
+  .LogoHomepng{
+    width: 70%;
+  }
+}
+
 /*#endregion Logos*/
+
 
 
 /*#region Clitch_Buttons */
@@ -185,17 +233,6 @@ height: 75px;
 line-height: 75px;
 transition: background 0.2s;
 }
-
-@media screen and (max-width: 422px) {
-  .cybr-btn {
-  --color: hsl(0, 0%, 0%);
-  }
-
-
-}
-
-
-
 
 
 
@@ -341,6 +378,91 @@ z-index: -1;
 
 /*#endregion Clitch_Buttons */
 
+
+/*#region Clitchy_Menu */
+
+.cybr-btn_menu{
+  margin-top: 2rem;
+--primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
+--shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
+--primary-hue: 490;
+--primary-lightness: 60;
+--color: hsl(0, 0%, 100%);
+--font-size: 26px;
+--shadow-primary-hue: 260;
+--label-size: 9px;
+--shadow-secondary-hue: 60;
+--shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
+--clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+--border: 4px;
+--shimmy-distance: 5;
+--clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
+--clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
+--clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
+--clip-four: polygon(0 -5%, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+--clip-five: polygon(0 -4%, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+--clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
+--clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
+font-family: 'Cyber', sans-serif;
+color: var(--color);
+cursor: pointer;
+background: transparent;
+text-transform: uppercase;
+font-size: var(--font-size);
+outline: transparent;
+letter-spacing: 2px;
+position: relative;
+font-weight: 700;
+border: 0;
+min-width: 300px;
+height: 75px;
+line-height: 75px;
+transition: background 0.2s;
+}
+
+.cybr-btn_menu:hover {
+  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
+}
+.cybr-btn_menu:active {
+  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
+}
+  
+.cybr-btn_menu:after,
+.cybr-btn_menu:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: var(--clip);
+  z-index: -1;
+}
+  
+.cybr-btn_menu:before {
+  background: var(--shadow-primary);
+  transform: translate(var(--border), 0);
+}
+  
+.cybr-btn_menu:after {
+  background: var(--primary);
+}
+
+.cybr-btn_menu:hover .cybr-btn__glitch {
+  display: block;
+}
+
+@media only screen and (max-width: 450px) {
+  .cybr-btn_menu{
+    --border: 2px;
+    margin-top: 1rem;
+    
+    
+  }
+}
+
+
+/*#endregion Clitchy_Menu */
 
 
 /*#region Info_Button */
@@ -618,6 +740,7 @@ ul
 }
 
 /*#endregion Sidebox */
+
 
 
 /*#region Whale And Water */
@@ -1096,6 +1219,7 @@ z-index: -1;
 /*#endregion Whale And Water*/
 
 
+
 /*#region TextSkills */
 
 
@@ -1136,6 +1260,7 @@ padding-bottom: 18%;
 
 
 /*#endregion TextSkills */
+
 
 
 /*#region PastelBoxes */
