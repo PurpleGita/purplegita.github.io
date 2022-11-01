@@ -163,9 +163,6 @@ display: flex;
 
 
 @media only screen and (min-width: 450px) {
-  .LogoHome{
-  }
-
   .LogoHomepng{
     width: 70%;
   }
