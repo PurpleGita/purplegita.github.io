@@ -64,7 +64,6 @@
 /*#endregion Background*/
 
 
-
 /*#region GetInTouchButton */
 
 .GetInTouchButton{
@@ -148,7 +147,6 @@ display: flex;
 /*#endregion GetInTouchButton */
 
 
-
 /*#region Logos*/
 .LogoHome{
     margin: 0;
@@ -174,7 +172,6 @@ display: flex;
 }
 
 /*#endregion Logos*/
-
 
 
 /*#region Clitch_Buttons */
@@ -382,6 +379,7 @@ z-index: -1;
 /*#region Clitchy_Menu */
 
 .cybr-btn_menu{
+  
   margin-top: 2rem;
 --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
 --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
@@ -414,8 +412,8 @@ letter-spacing: 2px;
 position: relative;
 font-weight: 700;
 border: 0;
-min-width: 300px;
-height: 75px;
+min-width: 250px;
+height: 50px;
 line-height: 75px;
 transition: background 0.2s;
 }
@@ -452,16 +450,37 @@ transition: background 0.2s;
   display: block;
 }
 
+.cybr-btn-small_menu{
+  position: absolute;
+top: calc(var(--border) * -1);
+left: calc(var(--border) * -1);
+right: calc(var(--border) * -1);
+bottom: calc(var(--border) * -1);
+}
+
 @media only screen and (max-width: 450px) {
   .cybr-btn_menu{
     --border: 2px;
     margin-top: 1rem;
-    
-    
+    min-width: 200px;
+    height: 30px;
+  }
+
+  .cybr-btn-small_menu{
+    position: absolute;
+    top: -60%;
+    left: 1%;
+    right: 1%;
+    bottom: 1%;
+    font-size: 90%
   }
 }
 
-
+@media only screen and (min-width: 1920px) {
+  .cybr-btn_menu{
+    left: 6%;
+  }
+}
 /*#endregion Clitchy_Menu */
 
 
@@ -635,7 +654,6 @@ transition: background 0.2s;
 /*#endregion Info_Button */
 
 
-
 /*#region glitch_rotated */
 
 
@@ -696,15 +714,28 @@ transition: background 0.2s;
 /*#endregion glitch_rotated */
 
 
-
 /*#region Goose */
 .Goose{
   margin-left: -43rem;
   margin-top: 8rem;
+  height: 30rem; 
+  width: 20rem
 }
 
-/*#endregion Goose */
+@media only screen and (max-width: 450px) {
+  .Goose{
+    margin-top: 1rem;
+    margin-bottom: 30rem;
+    margin-left: 1rem;
+    width: 10rem;
+    height: 10rem;
+  }
 
+}
+
+
+
+/*#endregion Goose */
 
 
 /*#region AboutText */
@@ -714,13 +745,20 @@ transition: background 0.2s;
   position: fixed;
   margin-left: 0rem;
   margin-top: 8rem;
-  width: 39rem;
-  
-  
+  width: 39rem; 
 }
 
-/*#endregion AboutText */
+@media only screen and (max-width: 450px) {
+  .AboutText{
+    font-size: 100%;
+    margin-top: 110%;
+    width: 90%;
+  }
 
+}
+
+
+/*#endregion AboutText */
 
 
 /*#region Sidebox */
@@ -740,7 +778,6 @@ ul
 }
 
 /*#endregion Sidebox */
-
 
 
 /*#region Whale And Water */
@@ -770,6 +807,7 @@ z-index: -1;
 
 }
 
+
 .images
 {
   align-items: center;
@@ -778,6 +816,19 @@ z-index: -1;
   height: 100%;
   width: 300%;
   animation: slideshow 20s linear infinite;
+}
+
+@media only screen and (min-width: 1920px) {
+  .images{
+  height: 100%;
+  }
+  .Water{
+    margin-top: 26.9%;
+    }
+    
+  .Box{
+    margin-top: 26.9%;
+  }
 }
 
 @keyframes slideshow {
@@ -857,6 +908,25 @@ z-index: -1;
   top: 0;
   left: 0;
   animation: float1 4s ease-in-out infinite alternate;
+}
+
+@media only screen and (max-width: 450px) {
+  .cloud1{
+    z-index: -6;
+  }
+
+  .cloud2{
+    z-index: -6;
+  }
+
+  .scene{
+    z-index: -2;
+  }
+
+  .Water{
+    z-index: -3;
+  }
+  
 }
 
 @keyframes float1 {
@@ -1219,7 +1289,6 @@ z-index: -1;
 /*#endregion Whale And Water*/
 
 
-
 /*#region TextSkills */
 
 
@@ -1259,8 +1328,33 @@ padding-bottom: 18%;
 }
 
 
-/*#endregion TextSkills */
+@media only screen and (max-width: 450px) {
+  .TextHeadline{
+    font-size: 300%;
+    top: 23%;
+    left: 3%;
+  }
 
+  .FrontHead{
+    padding-bottom: 90%;
+  }
+  
+  .TextNormal{
+    font-size: 130%;
+    left: 3%;
+    top: 32%;
+  }
+
+  .FrontNormal{
+    padding-bottom: 100%;
+  
+  }
+
+
+
+}
+
+/*#endregion TextSkills */
 
 
 /*#region PastelBoxes */
@@ -1343,6 +1437,62 @@ padding-bottom: 18%;
   90% {left: 23.5%; top: 125%;}
   100% {left: 21.5%; top: 140%;}
 }
+
+@media only screen and (max-width: 450px) {
+  .BlueBoxes{
+    width: 200%;
+    height: 200%;
+
+}
+
+.PastelBlueBox{
+  position: fixed;
+
+  border: 5px solid rgb(0, 0, 0);
+  z-index: -5;
+  width: 50%;
+}
+
+
+  .BoxBigText3{
+    position: fixed;
+    width: 100%;
+    top: 26%;
+    left: 2%;
+    font-size: 220%;
+  }
+
+  .BoxText2{
+    position: fixed;
+    width: 80%;
+    top: 67%;
+    left: 2%;
+  }
+
+  .BoxBigText2{
+    position: fixed;
+    width: 23%;
+    top: 59%;
+    left: 2%;
+    font-size: 220%;
+  }
+
+  .BoxBigText1{
+    display: none;
+  }
+  
+  .BoxText1{
+    display: none;
+  }
+
+  .BoxText3{
+    position: fixed;
+    width: 80%;
+    top: 35%;
+    left: 2%;
+  }
+}
+
 
 /*#endregion PastelBoxes */
 
