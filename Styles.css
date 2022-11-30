@@ -713,10 +713,10 @@ transition: background 0.2s;
 
 /*#region Goose */
 .Goose{
-  margin-left: -43rem;
+  margin-left: -50rem;
   margin-top: 8rem;
   height: 30rem; 
-  width: 20rem
+  width: 30rem
 }
 
 @media only screen and (max-width: 450px) {
